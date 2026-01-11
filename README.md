@@ -2,6 +2,10 @@
 
 This plugin displays the current week number on your TRMNL device. It features a dynamic background that acts as a progress bar, visualizing how much of the year has passed.
 
+<a href="https://usetrmnl.com/recipes/216687">
+  <img src="https://usetrmnl.com/images/brand/badges/dark/show-it-on-trmnl/trmnl-badge-show-it-on-dark.svg" alt="TRMNL Badge" width="120">
+</a>
+
 ## Features
 
 -   **Current Week Display**: Clearly shows the current week number.
