@@ -1,0 +1,12 @@
+<div class="layout w--full h--full bg--white relative overflow--hidden font--sans">
+  
+  <div class="absolute top--0 left--0 w--full h--full grid grid--cols-1 z--1">
+    <div class="col col--center row--center text--center">
+      <span class="block text--uppercase text--bold text--size-20 mb--2">Week</span>
+      <span class="block font--bold text--bold text--size-140">{{ current_week }}</span>
+    </div>
+  </div>
+
+  <div class="absolute top--0 left--0 h--full bg--white z--2 blend--difference" style="width: {{ progress_pct }}%;"></div>
+
+</div>

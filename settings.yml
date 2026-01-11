@@ -1,0 +1,19 @@
+---
+strategy: static
+no_screen_padding: 'yes'
+dark_mode: 'no'
+static_data: ''
+polling_verb: get
+polling_url: ''
+polling_headers: ''
+polling_body: ''
+id: 216687
+custom_fields:
+- keyname: author_bio
+  field_type: author_bio
+  name: About This Plugin
+  description: How far are we in the year? Well simple. The progressbar in the background will be filled in the further we are in the year. And to keep it simple, you see the current weeknumber.
+  category: calendar
+  email_address: trmnl@achtnegen.nl
+name: Week Number
+refresh_interval: 1440

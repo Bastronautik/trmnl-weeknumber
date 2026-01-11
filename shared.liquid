@@ -1,0 +1,92 @@
+{% assign current_timestamp = trmnl.system.timestamp_utc %}
+{% assign current_week = current_timestamp | date: "%V" | plus: 0 %}
+{% assign total_weeks = 52.0 %}
+{% assign progress_pct = current_week | divided_by: total_weeks | times: 100 %}
+
+{% if progress_pct > 100 %}
+{% assign progress_pct = 100 %}
+{% endif %}
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap" rel="stylesheet">
+
+<style>
+  .layout {
+    font-family: "Google Sans Flex";
+  }
+
+  .relative {
+    position: relative;
+  }
+
+  .absolute {
+    position: absolute;
+  }
+
+  .top--0 {
+    top: 0;
+  }
+
+  .left--0 {
+    left: 0;
+  }
+
+  .z--1 {
+    z-index: 1;
+  }
+
+  .z--2 {
+    z-index: 2;
+  }
+
+  .text--bold {
+    font-weight: bold;
+  }
+
+  .overflow--hidden {
+    overflow: hidden;
+  }
+
+  .text--uppercase {
+    text-transform: uppercase;
+  }
+
+  .font--bold {
+    font-weight: bold !important;
+  }
+
+  .blend--difference {
+    mix-blend-mode: difference;
+  }
+
+  .text--size-250 {
+    font-size: 250px;
+    line-height: 0.8;
+  }
+
+  .text--size-140 {
+    font-size: 140px;
+    line-height: 0.8;
+  }
+
+  .text--size-90 {
+    font-size: 90px;
+    line-height: 0.8;
+  }
+
+  .text--size-30 {
+    font-size: 30px;
+    letter-spacing: 5px;
+  }
+
+  .text--size-20 {
+    font-size: 20px;
+    letter-spacing: 3px;
+  }
+
+  .text--size-14 {
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+</style>
